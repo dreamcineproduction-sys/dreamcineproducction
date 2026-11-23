@@ -1,0 +1,80 @@
+DreamCine Production - sirf GitHub par live karna aur badlav wahin save hona
+==============================================================================
+Aapko sirf GitHub ka account chahiye. Koi dusra platform nahi.
+
+PART 1: GitHub par site live karna (sirf ek baar)
+1. github.com par login kijiye > upar daayein '+' > 'New repository'.
+   Naam likhiye (jaise  dreamcine) > 'Public' > 'Create repository'.
+2. 'uploading an existing file' dabayiye. Is folder ki saari files (index.html, .nojekyll,
+   uploads folder) khinch kar daaliye > neeche 'Commit changes'.
+3. Repository 'Settings' > 'Pages' > Source: 'Deploy from a branch' > Branch 'main', folder '/ (root)' > Save.
+4. 1-2 minute baad wahi page aapki site ka link dikhayega:
+      https://AAPKA-NAAM.github.io/dreamcine/
+   Yehi aapka public link hai. Isse kisi ko bhi bhej sakte hain.
+
+PART 2: Apna Admin password banana (sirf ek baar)
+1. Apni live site kholiye > neeche baayein '🔒 Admin'.
+2. Koi bhi password likhkar Unlock dabayiye. Site bolegi "No password is set yet".
+   Apna naya password (8+ akshar) likhiye, neeche dobara likhiye > Unlock.
+   (Koi shuru ka/default password nahi hai. Ye password sirf aapka hai.)
+
+PART 3: GitHub se jodna (sirf ek baar)  -  isse badlav seedha GitHub me save honge
+1. Admin khulte hi 'GitHub' tab dikhega. Usme 'Open GitHub token page' dabayiye.
+2. Token ka koi bhi naam likhiye. 'Repository access' me 'Only select repositories' >
+   sirf apni dreamcine repository chuniye.
+3. 'Permissions' > 'Repository permissions' > 'Contents' > 'Read and write'.
+4. 'Generate token' dabakar token copy kijiye (wo dobara nahi dikhega).
+5. Site me GitHub tab me token paste kijiye > 'Save connection' > 'Test'. 'Connected' aana chahiye.
+
+PART 4: Roz ka kaam (koi file download nahi karni)
+- Upar 'Portfolio' (ya Admin > Projects > 'Open portfolio page') par jaiye.
+- '+' wale dabbe me apni photos aur videos chuniye (ek saath kai bhi). Har ek ka project ban jata hai.
+- Kisi project par dabakar naam, category aur description likhiye. Saamne wahi page dikhta hai jo client dekhega.
+- Badlav apne aap kuch second baad GitHub me save ho jaate hain ('Save & publish' dabane par turant).
+  Content repository ki 'data.json' me, photos aur videos 'uploads' folder me jaate hain.
+  Isliye kabhi index.html badal bhi dein, aapke projects nahi jaate.
+- Live site 1-2 minute me badal jati hai (GitHub ka apna samay).
+
+AGAR GITHUB PAR PURANI SITE HI DIKH RAHI HO  (naya version live nahi hua)
+Is site ke neeche likha hota hai:  build %s   <- Ye likha dikhe to NAYA version live hai.
+Na dikhe ya purani site dikhe, to ye karein:
+1. Sabse aam galti: ZIP file seedha GitHub par daal dena. GitHub zip ko kholta nahi. Pehle zip ko apne
+   computer par 'Extract' karein, phir andar ki 'index.html' (aur .nojekyll, uploads folder) ko GitHub par daalein.
+2. GitHub repository > 'Add file' > 'Upload files' > sirf NAYI 'index.html' khinch kar daaliye
+   (purani index.html ko apne aap badal degi) > 'Commit changes'.
+3. Repository ke upar 'Actions' tab kholiye. 'pages build and deployment' ke aage hara tick aane tak ruk jayein (1-2 minute).
+4. Settings > Pages me 'Your site is live at ...' dikhna chahiye. Branch 'main' aur folder '/ (root)' hona chahiye.
+5. Apni site kholkar Ctrl + F5 dabayiye (phone par: browser band karke dobara kholiye, ya private/incognito tab me kholiye).
+   GitHub apni files kuch minute yaad rakhta hai, isliye kabhi 10 minute tak purani dikh sakti hai.
+6. Aasan raasta (token ke saath): apne computer par NAYI index.html par double-click karein (Chrome me khulegi)
+   > Admin > apna password banayein > 'GitHub' tab > repository + token bharein > 'Save connection' > 'Test'.
+   Test bata dega ki GitHub par kaunsa build hai aur wo purana hai ya naya.
+   Purana ho to 'Publish this version to GitHub' dabayiye. Ye naya index.html seedha GitHub par daal deta hai.
+   Fir 1-2 minute baad site par Ctrl + F5.
+7. Aapka pehle ka kaam (projects, photos, text) repository ki 'data.json' aur 'uploads' me surakshit hai;
+   index.html badalne se wo nahi jata.
+
+UPLOAD KI SEEMA
+- Ek photo ya video ki seema 99 MB hai. Ye GitHub ki apni hadd hai (isse badi file GitHub leta hi nahi).
+- Photo apne aap 2400 pixel tak chhoti ho jati hai, saaf rehti hai par halki ho jati hai.
+- Badi video (99 MB se zyada) ke liye: YouTube par 'Unlisted' daaliye ya Google Drive par daal kar
+  'Anyone with the link' kijiye, fir link project me chipka dijiye. YouTube, Instagram, Vimeo aur Google Drive
+  ka link project page par hi chalta hai.
+- Poori repository ko 1 GB ke andar rakhein (GitHub Pages ki seema). Bahut badi videos ke liye link wala tareeka behtar hai.
+- Badi video upload hote waqt kuch minute lag sakte hain; tab band na karein. Video grid me hover karne par chalti hai.
+
+BINA TOKEN (BINA KEY) WALA TAREEKA
+- Agar aap koi token/key nahi banana chahte: Admin > 'GitHub' tab me neeche 'Copy changes' dabayiye, fir
+  'Open data.json on GitHub' dabayiye (pehli baar 'First time: create data.json'). GitHub ka page khulega
+  (aap pehle se GitHub me login hain). Wahan purana likha mitakar paste kijiye aur 'Commit changes' dabayiye.
+- Ye tareeka haath se karna padta hai, isliye roz ke kaam ke liye token wala tareeka behtar hai.
+- Is tareeke me photos data.json ke andar hi rehti hain (chhoti hoti hain); video ke liye YouTube/Drive link chipkayein.
+
+DATA KI SURAKSHA
+- Token sirf aapke browser me rehta hai. Website ki file me ya GitHub par likha nahi jata.
+- Token sirf isi ek repository ke liye banayein. Koi aur chiz na khole.
+- Admin password website me sirf 'hash' roop me rehta hai, asli password nahi. Lamba password (12+ akshar) rakhein.
+  Asli suraksha token se hai: bina token ke koi bhi site me badlav save nahi kar sakta.
+- Dusre computer/phone par Admin chalane ke liye wahan bhi token ek baar paste karna hoga.
+- Token kho jaye ya leak ho to GitHub me use 'Revoke' kar dein aur naya bana lein.
+- Hataye gaye projects ki photos GitHub ke 'uploads' folder me pari rehti hain; chahein to wahan se delete kar dein.
